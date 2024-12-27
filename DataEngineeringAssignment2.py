@@ -17,6 +17,7 @@ nlp = spacy.load("en_core_web_sm")
 
 client = MongoClient("mongodb://localhost:27017")  
 DB = client['UsersAPI']
+
 collection = DB['Users']
 
 def process_text(text):
